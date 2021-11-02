@@ -6,7 +6,5 @@ public class Main {
 	    Account accountOne = new Account();
 
         accountOne.mainMenu();
-
-        System.out.println("neshto");
     }
 }
