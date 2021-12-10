@@ -97,6 +97,7 @@ public class SignInScreen extends JFrame implements ActionListener{
                     JOptionPane.showMessageDialog(null, "Wrong Email/Password. Please, Check your Credentials!");
                 }
             }catch (SQLException ex){
+                JOptionPane.showMessageDialog(null, "CONNECTION ERROR!\nServer may be offline.");
                 ex.printStackTrace();
             }
         }
