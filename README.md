@@ -8,3 +8,5 @@ A simple banking app I am working on for learning purposes.
 1. Save and load user info from a database. ### (DONE)
 2. Create a Graphical User Interface(GUI). ### (DONE)
 3. Create a Login and Signup system. ### (DONE)
+4. Work on the Transaction History.
+5. Add profile photos to choose from.
