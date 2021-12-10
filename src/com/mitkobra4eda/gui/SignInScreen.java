@@ -81,8 +81,7 @@ public class SignInScreen extends JFrame implements ActionListener{
         }
         if(e.getSource() == signIn){
             try{
-                Connection conn = DriverManager.getConnection(
-                        "jdbc:postgresql://localhost:5432/accounts",
+                Connection conn = DriverManager.getConnection("jdbc:postgresql://109.104.206.19:5432/accounts",
                         "postgres",
                         "admin");
                 PreparedStatement check = conn.prepareStatement("SELECT userid FROM accounts WHERE email = ? AND password = ?");

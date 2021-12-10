@@ -16,7 +16,7 @@ public enum TransactionTypes{
             case DEPOSIT:
                 try{
                     Connection con = DriverManager.getConnection(
-                            "jdbc:postgresql://localhost:5432/accounts",
+                            "jdbc:postgresql://109.104.206.19:5432/accounts",
                             "postgres",
                             "admin");
                     PreparedStatement pStatement = con.prepareStatement(
@@ -43,7 +43,7 @@ public enum TransactionTypes{
             case WITHDRAW:
                 try{
                     Connection con = DriverManager.getConnection(
-                            "jdbc:postgresql://localhost:5432/accounts",
+                            "jdbc:postgresql://109.104.206.19:5432/accounts",
                             "postgres",
                             "admin");
                     PreparedStatement pStatement = con.prepareStatement(
@@ -70,7 +70,7 @@ public enum TransactionTypes{
             case TRANSFER:
                 try{
                     Connection con = DriverManager.getConnection(
-                            "jdbc:postgresql://localhost:5432/accounts",
+                            "jdbc:postgresql://109.104.206.19:5432/accounts",
                             "postgres",
                             "admin");
                     PreparedStatement pStatement = con.prepareStatement(

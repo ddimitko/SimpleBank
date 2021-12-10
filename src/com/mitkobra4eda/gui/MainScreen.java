@@ -216,7 +216,7 @@ public class MainScreen extends JFrame implements ActionListener, MouseListener 
     public void getProfileName(){
         try {
             Connection con = DriverManager.getConnection(
-                    "jdbc:postgresql://localhost:5432/accounts",
+                    "jdbc:postgresql://109.104.206.19:5432/accounts",
                     "postgres",
                     "admin");
             PreparedStatement Pstatement = con.prepareStatement(
@@ -238,7 +238,7 @@ public class MainScreen extends JFrame implements ActionListener, MouseListener 
 
     public void getProfileWallet(){
         try {
-            Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/accounts",
+            Connection con = DriverManager.getConnection("jdbc:postgresql://109.104.206.19:5432/accounts",
                     "postgres",
                     "admin");
             PreparedStatement Pstatement = con.prepareStatement(

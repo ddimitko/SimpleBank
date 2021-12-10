@@ -120,7 +120,7 @@ public class SignupScreen extends JFrame implements ActionListener {
         if(e.getSource() == newAccountButton){
             try{
                 Connection connection = DriverManager.getConnection(
-                        "jdbc:postgresql://localhost:5432/accounts",
+                        "jdbc:postgresql://109.104.206.19:5432/accounts",
                         "postgres",
                         "admin");
                 PreparedStatement Pstatement = connection.prepareStatement("INSERT INTO accounts VALUES(?,?,?,?)");
